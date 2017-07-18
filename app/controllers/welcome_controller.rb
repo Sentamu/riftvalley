@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
 
    def gal
   end
+
+  def loc
+  end
 end
