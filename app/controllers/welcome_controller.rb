@@ -4,4 +4,7 @@ class WelcomeController < ApplicationController
 
   def acc
   end
+
+   def gal
+  end
 end
