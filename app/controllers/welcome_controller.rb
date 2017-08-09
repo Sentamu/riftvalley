@@ -10,4 +10,7 @@ class WelcomeController < ApplicationController
 
   def loc
   end
+
+  def act
+  end
 end

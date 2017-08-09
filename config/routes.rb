@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'welcome/acc'
   get 'welcome/gal'
   get 'welcome/loc'
+  get 'welcome/act'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
