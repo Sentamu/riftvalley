@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :clients
+  resources :clientzs
   get 'welcome/homepage'
   get 'welcome/acc'
   get 'welcome/gal'
