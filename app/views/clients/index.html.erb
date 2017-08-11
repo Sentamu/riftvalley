@@ -1,41 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Clients</h1>
+<div class="container">
+  <h2 class="center">Reservations</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Tel</th>
-      <th>Start</th>
-      <th>End</th>
-      <th>Rooms</th>
-      <th>Adults</th>
-      <th>Message</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
+  <div class="row" >
     <% @clients.each do |client| %>
-      <tr>
-        <td><%= client.name %></td>
-        <td><%= client.email %></td>
-        <td><%= client.tel %></td>
-        <td><%= client.start %></td>
-        <td><%= client.end %></td>
-        <td><%= client.rooms %></td>
-        <td><%= client.adults %></td>
-        <td><%= client.message %></td>
-        <td><%= link_to 'Show', client %></td>
-        <td><%= link_to 'Edit', edit_client_path(client) %></td>
-        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      
+        <p>Name: <%= client.name %></p>
+        <p>Email: <%= client.email %></p>
+        <p>Tel: <%= client.tel %></p>
+        <p>Arrival Date: <%= client.start %></p>
+        <p>Departure Date: <%= client.end %></p>
+        <p>Number Of Rooms: <%= client.rooms %></p>
+        <p>Number Of Adults: <%= client.adults %></p>
+        <p>Other Details: <%= client.message %></p>
+        <p><% link_to 'Show', client %></p>
+        <p><% link_to 'Edit', edit_client_path(client) %></p>
+        <p><%= link_to 'Delete', client, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <br><br>
+     
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
-<br>
+<br><br>
 
-<%= link_to 'New Client', new_client_path %>
+<% link_to '', new_client_path %>

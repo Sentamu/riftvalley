@@ -20,17 +20,17 @@
   <tbody>
     <% @clientzs.each do |clientz| %>
       <tr>
-        <td><%= clientz.name %></td>
-        <td><%= clientz.email %></td>
-        <td><%= clientz.tel %></td>
-        <td><%= clientz.start %></td>
-        <td><%= clientz.end %></td>
-        <td><%= clientz.rooms %></td>
-        <td><%= clientz.adults %></td>
-        <td><%= clientz.message %></td>
-        <td><%= link_to 'Show', clientz %></td>
-        <td><%= link_to 'Edit', edit_clientz_path(clientz) %></td>
-        <td><%= link_to 'Destroy', clientz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= clientz.name %></p>
+        <td><%= clientz.email %></p>
+        <td><%= clientz.tel %></p>
+        <td><%= clientz.start %></p>
+        <td><%= clientz.end %></p>
+        <td><%= clientz.rooms %></p>
+        <td><%= clientz.adults %></p>
+        <td><%= clientz.message %></p>
+        <td><%= link_to 'Show', clientz %></p>
+        <td><%= link_to 'Edit', edit_clientz_path(clientz) %></p>
+        <td><%= link_to 'Destroy', clientz, method: :delete, data: { confirm: 'Are you sure?' } %></p>
       </tr>
     <% end %>
   </tbody>
