@@ -71,6 +71,15 @@
                         <a class="page-scroll" href="/welcome/act">Things To Do</a>
                     </li>
 
+                    <li><%= link_to "Sign In", new_user_session_path %></li>
+                    </li>
+                    
+                    <% if user_signed_in? %>
+                    <li><a class="page-scroll" href="/clients">Messages</a></li>
+                    <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+                    <% end %>
+                </div>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
