@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Clientzs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Tel</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Rooms</th>
+      <th>Adults</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clientzs.each do |clientz| %>
+      <tr>
+        <td><%= clientz.name %></p>
+        <td><%= clientz.email %></p>
+        <td><%= clientz.tel %></p>
+        <td><%= clientz.start %></p>
+        <td><%= clientz.end %></p>
+        <td><%= clientz.rooms %></p>
+        <td><%= clientz.adults %></p>
+        <td><%= clientz.message %></p>
+        <td><%= link_to 'Show', clientz %></p>
+        <td><%= link_to 'Edit', edit_clientz_path(clientz) %></p>
+        <td><%= link_to 'Destroy', clientz, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clientz', new_clientz_path %>

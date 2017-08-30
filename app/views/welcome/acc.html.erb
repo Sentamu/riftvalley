@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/welcome/homepage">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a class="page-scroll" href="/welcome/acc">Accomodation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/welcome/act">Activities</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/clients/new">Reservations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/welcome/loc">Location</a>
+                    </li>
+                    <li>
+                       <a class="page-scroll" href="/welcome/gal">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+
+         <div class="item active">
+
+          <%= link_to image_tag("elephants.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+          <div class="container">
+            <div class="carousel-caption ">
+              
+
+
+              
+            </div>
+          </div>
+        </div>
+
+
+          <div class="item ">
+          <%= link_to image_tag("acc.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+          <div class="container">
+            <div class="carousel-caption">
+              
+              
+            </div>
+          </div>
+        </div>
+        
+       
+     
+
+        
+        
+      
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">ACCOMMODATION</h2>
+                    <hr class="light">
+                    <p class="text-faded">Distinctly African in style, we offer comfortable cottages with luxury finishing and an amazing overall safari experience. Each cottage features an ample free air bone balcony which provides a panoramic view of Queen Elizabeth National Park in the expanse of the Rift Valley. The cottages are spacious and feature large en-suite bathrooms and beautiful showers suitable for both double and twin accommodation.</p>
+
+                    <p class="text-faded">Our guests experience unprecedented comfort while enjoying the sights and sounds that the Game Lodge has to offer. Elephant and Buffalo herds (particularly in early morning and late afternoons) can be viewed from the comfort of the cottage balconies, the sunset as it reflects on the dancing waters of Lake Edward – a memorable and breathtaking spectacle that can be enjoyed in the comfort of all our suites. The fabled snow-capped mountains of the moon (Rwenzori Mountain) hardly 50kms from the Equator can on a clear day, can also be viewed from the balcony of any of any of the cottages.</p>
+
+
+
+                    
+
+
+<br/>
+                    <a href="/clients/new" class="page-scroll btn btn-default btn-xl sr-button">Make A Reservation!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="no-padding" id="portfolio">
+   
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/2ora1tehjoiysdk/IMG_0332.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/l4rylxx9vpycax1/IMG_0361.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/96onimfzwf1hwxl/IMG_1736.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+
+
+
+                    
+
+                    <p class="text-faded"><strong>The single cottages</strong><br/>
+Our single cottages, each with individual balconies and exquisite bath rooms, come in two; Double bed and bathroom in a cottage and, Twin beds and bathroom in a cottage.</p>
+<br/>
+<br/>
+                    
+                    <a href="/clients/new" class="page-scroll btn btn-default btn-xl sr-button">Make A Reservation!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="no-padding" id="portfolio">
+   
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+               
+                
+                
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/9vxt15z3mf412me/IMG_0345.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/93z6vn0hqwv57qu/IMG_0347.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/2fjlvvr7b7geoos/IMG_0353.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+
+
+
+                
+                    
+
+                    <p class="text-faded"><strong>The family cottage</strong><br/>
+Dining and bar services are available in the main cottage. These services can also be arranged in the garden (weather permitting) and also on balconies of each of the cottages based on guest preferences.</p>
+<br/>
+<br/>
+                    <a href="/clients/new" class="page-scroll btn btn-default btn-xl sr-button">Make A Reservation!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="no-padding" id="portfolio">
+   
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+               
+                
+                
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/9vxt15z3mf412me/IMG_0345.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/93z6vn0hqwv57qu/IMG_0347.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/2fjlvvr7b7geoos/IMG_0353.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+
+
+
+                    
+
+                    <p class="text-faded"><strong>Dining and bar</strong><br/>
+Dining and bar services are available in the main cottage. These services can also be arranged in the garden (weather permitting) and also on balconies of each of the cottages based on guest preferences.</p>
+<br/>
+<br/>
+                    <a href="/clients/new" class="page-scroll btn btn-default btn-xl sr-button">Make A Reservation!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="no-padding" id="portfolio">
+   
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                
+                
+                
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/otw5h7t8ybsxkls/IMG_9387.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/xyn63ae9xivusmv/IMG_1795%20%286%29.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/m74em6jz4l2ghkz/IMG_9458.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+
+
+
+                    
+
+                    <p class="text-faded"><strong>Beddings</strong><br/>
+<br/>
+<br/>
+                    <a href="/clients/new" class="page-scroll btn btn-default btn-xl sr-button">Make A Reservation!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="no-padding" id="portfolio">
+   
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                
+                
+                
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/otw5h7t8ybsxkls/IMG_9387.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/xyn63ae9xivusmv/IMG_1795%20%286%29.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   
+                                </div>
+                                <div class="project-name">
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://dl.dropboxusercontent.com/s/m74em6jz4l2ghkz/IMG_9458.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+
+
+                    
+
+                    <p class="text-faded"><strong>Rates/Charges</strong><br/>
+Rates/Charges vary between USD 100 to USD 150 according to season per head. Children below the age of 5 donot pay, wellas those above 5 pay 75% the charge of the adult, the charges include the full course, More Information on going rates/charges can be obtained by intending guests on enquiry by email or phone before reservations are made.</p>
+<br/>
+
+<p class="text-faded"><strong>Booking/reservations</strong><br/>
+Booking/reservations can be made/done by email or by phone on the contacts indicated below. It is advisable to make booking/reservations in advance at least 30 days before intended date of stay.
+
+Payments should be made in advance on confirmation of booking/reservation. Payments can be deposited in designated Rift Valley Game Lodge bank account by EFT or CASH.</p>
+<br/>
+                    <a href="/clients/new" class="page-scroll btn btn-default btn-xl sr-button">Make A Reservation!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>+256 (0) 785 803 728</p><br/>
+                    <p>Designed by :<a href="http://theglobalbusinessdevelopers.com/" target="_blank">Global Business Developers</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@riftvalleygamelodge.com</a></p><br/>
+                    <p>Copyright © Rift Valley Game Lodge 2017 </p><br/>
+                    <p>
+                    <a href="https://www.facebook.com/newlegacygroup" target="_blank" title="Facebook"><img src="https://dl.dropboxusercontent.com/s/dekq2ekp2fu5wvr/if_Facebook_1288098.png" alt="Facebook"/></a>
+                    <p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
+

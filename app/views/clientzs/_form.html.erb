@@ -1,0 +1,49 @@
+<%= form_for(@clientz) do |f| %>
+  <% if @clientz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@clientz.errors.count, "error") %> prohibited this clientz from being saved:</h2>
+
+      <ul>
+      <% @clientz.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br>
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.date_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br>
+    <%= f.date_select :end %>
+  </div>
+  <div class="field">
+    <%= f.label :rooms %><br>
+    <%= f.number_field :rooms %>
+  </div>
+  <div class="field">
+    <%= f.label :adults %><br>
+    <%= f.number_field :adults %>
+  </div>
+  <div class="field">
+    <%= f.label :message %><br>
+    <%= f.text_field :message %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
