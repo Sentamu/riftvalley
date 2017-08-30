@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170830002434) do
+=======
+ActiveRecord::Schema.define(version: 20170811215809) do
+>>>>>>> ba70615998eb8ee1ccc7175cd66a79d07f621079
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
@@ -24,7 +28,10 @@ ActiveRecord::Schema.define(version: 20170830002434) do
     t.text     "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.string   "room"
+=======
+>>>>>>> ba70615998eb8ee1ccc7175cd66a79d07f621079
   end
 
   create_table "clientzs", force: :cascade do |t|
